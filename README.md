@@ -42,12 +42,12 @@ Restoran menüsü için QR kod ile erişilebilen modern ve responsive web sitesi
 ├── style.css           # Stil dosyası
 ├── script.js           # JavaScript dosyası
 ├── online_fast_food_logo.png  # Logo
-├── URUN ÖN PLANDA/     # Öncelikli ürün görselleri
+├── product-images/     # Ürün görselleri klasörü
 └── [diğer görseller]   # Ürün görselleri
 ```
 
 ## Notlar
 
-- Görseller "URUN ÖN PLANDA" klasöründe önceliklidir
+- Görseller "product-images" klasöründe tutulur
 - Eğer görsel bulunamazsa ana klasördeki görsel kullanılır
 - Tüm görseller PNG veya JPG formatında olmalıdır
