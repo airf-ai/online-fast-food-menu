@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Fast Food - Menü</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // Sayfa yüklendiğinde scroll pozisyonunu sıfırla
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      window.addEventListener('beforeunload', function() {
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="app">
+      <!-- Üst Navigasyon Barı -->
+      <header class="header">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="logo">
+              <img src="online_fast_food_logo.png" alt="Online Fast Food Logo" class="logo-image" />
+            </div>
+            <h1 class="main-title">Online Fast Food Menü</h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- Ana Container -->
+      <div class="main-container">
+        <!-- Sol Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-item active" data-target="cat-campaign">
+            <div class="sidebar-icon">🎯</div>
+            <span class="sidebar-text">Kampanya</span>
+          </div>
+          <div class="sidebar-item" data-target="cat-grill">
+            <div class="sidebar-icon">🍗</div>
+            <span class="sidebar-text">Izgara Lezzetleri</span>
+          </div>
+          <div class="sidebar-item" data-target="cat-street">
+            <div class="sidebar-icon">🥖</div>
+            <span class="sidebar-text">Sokak Lezzetleri</span>
+          </div>
+          <div class="sidebar-item" data-target="cat-toast">
+            <div class="sidebar-icon">🥪</div>
+            <span class="sidebar-text">Tostlar</span>
+          </div>
+          <div class="sidebar-item" data-target="cat-snack">
+            <div class="sidebar-icon">🍟</div>
+            <span class="sidebar-text">Aperatifler</span>
+          </div>
+          <div class="sidebar-item" data-target="cat-drink">
+            <div class="sidebar-icon">🥤</div>
+            <span class="sidebar-text">İçecekler</span>
+          </div>
+        </aside>
+
+        <!-- Ana İçerik Alanı -->
+        <main class="main-content">
+          <div class="content-header">
+            <h2 class="category-title" id="current-category">Kampanya</h2>
+          </div>
+
+          <!-- Kampanya -->
+          <section class="category-panel category-active" id="cat-campaign">
+            <div class="campaign-container">
+              <!-- ATOM IZG.TAVUK + AYRAN -->
+              <div class="campaign-item">
+                <h3 class="campaign-title">ATOM IZG.TAVUK</h3>
+                <div class="campaign-combo">
+                  <div class="combo-image">
+                    <img src="URUN ÖN PLANDA/IZGARA TAVUK.jpg" alt="Izgara Tavuk" onerror="this.src='ızgara tavuk.jpeg'" />
+                  </div>
+                  <div class="combo-image">
+                    <img src="ayran.png" alt="Ayran" />
+                  </div>
+                </div>
+                <p class="campaign-price">160 TL</p>
+                <p class="campaign-description">Izgara Tavuk + Ayran</p>
+              </div>
+
+              <!-- ATOM KUMRU + AYRAN -->
+              <div class="campaign-item">
+                <h3 class="campaign-title">ATOM KUMRU</h3>
+                <div class="campaign-combo">
+                  <div class="combo-image">
+                    <img src="URUN ÖN PLANDA/TAM KUMRU.jpg" alt="Kumru" onerror="this.src='tam kumru.jpeg'" />
+                  </div>
+                  <div class="combo-image">
+                    <img src="ayran.png" alt="Ayran" />
+                  </div>
+                </div>
+                <p class="campaign-price">150 TL</p>
+                <p class="campaign-description">Kumru + Ayran</p>
+              </div>
+
+              <!-- ATOM SUCUK + EKMEK + AYRAN -->
+              <div class="campaign-item">
+                <h3 class="campaign-title">ATOM SUCUK</h3>
+                <div class="campaign-combo">
+                  <div class="combo-image">
+                    <img src="sucuk.png" alt="Sucuk Ekmek" />
+                  </div>
+                  <div class="combo-image">
+                    <img src="ayran.png" alt="Ayran" />
+                  </div>
+                </div>
+                <p class="campaign-price">170 TL</p>
+                <p class="campaign-description">Sucuk Ekmek + Ayran</p>
+              </div>
+
+              <!-- ATOM TOST + AYRAN -->
+              <div class="campaign-item">
+                <h3 class="campaign-title">ATOM TOST</h3>
+                <div class="campaign-combo">
+                  <div class="combo-image">
+                    <img src="URUN ÖN PLANDA/TOST.jpg" alt="Tost" onerror="this.src='bomba tost.jpeg'" />
+                  </div>
+                  <div class="combo-image">
+                    <img src="ayran.png" alt="Ayran" />
+                  </div>
+                </div>
+                <p class="campaign-price">140 TL</p>
+                <p class="campaign-description">Tost + Ayran</p>
+              </div>
+
+              <!-- ATOM KÖFTE + EKMEK + AYRAN -->
+              <div class="campaign-item">
+                <h3 class="campaign-title">ATOM KÖFTE</h3>
+                <div class="campaign-combo">
+                  <div class="combo-image">
+                    <img src="URUN ÖN PLANDA/YARIM KÖFTE.jpg" alt="Köfte Ekmek" />
+                  </div>
+                  <div class="combo-image">
+                    <img src="ayran.png" alt="Ayran" />
+                  </div>
+                </div>
+                <p class="campaign-price">220 TL</p>
+                <p class="campaign-description">Köfte Ekmek + Ayran</p>
+              </div>
+
+              <!-- ATOM PATSO + AYRAN -->
+              <div class="campaign-item">
+                <h3 class="campaign-title">ATOM PATSO</h3>
+                <div class="campaign-combo">
+                  <div class="combo-image">
+                    <img src="URUN ÖN PLANDA/PATSO TAM.jpg" alt="Patso" onerror="this.src='patso.jpeg'" />
+                  </div>
+                  <div class="combo-image">
+                    <img src="ayran.png" alt="Ayran" />
+                  </div>
+                </div>
+                <p class="campaign-price">120 TL</p>
+                <p class="campaign-description">Patso + Ayran</p>
+              </div>
+
+              <!-- Seçtiğiniz Ürüne Ek - Patates + Ayran -->
+              <div class="campaign-item">
+                <h3 class="campaign-title">Seçtiğiniz Ürüne Ek</h3>
+                <div class="campaign-combo">
+                  <div class="combo-image">
+                    <img src="patateskızartması.png" alt="Patates Kızartması" />
+                  </div>
+                  <div class="combo-image">
+                    <img src="ayran.png" alt="Ayran" />
+                  </div>
+                </div>
+                <p class="campaign-price">120 TL</p>
+                <p class="campaign-description">Patates + Ayran</p>
+              </div>
+
+              <!-- Seçtiğiniz Ürüne Ek - Patates + Kutu İçecek -->
+              <div class="campaign-item">
+                <h3 class="campaign-title">Seçtiğiniz Ürüne Ek</h3>
+                <div class="campaign-combo">
+                  <div class="combo-image">
+                    <img src="patateskızartması.png" alt="Patates Kızartması" />
+                  </div>
+                  <div class="combo-image">
+                    <img src="coca-cola.png" alt="Kutu İçecek" />
+                  </div>
+                </div>
+                <p class="campaign-price">140 TL</p>
+                <p class="campaign-description">Patates + Kutu İçecek</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Izgara Lezzetleri -->
+          <section class="category-panel" id="cat-grill">
+            <div class="subsection">
+              <div class="menu-grid">
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <span class="product-badge badge-popular">Çok Sevilenler</span>
+                    <img src="URUN ÖN PLANDA/IZGARA TAVUK.jpg" alt="Ekmek Arası Kuşbaşı Izgara Tavuk" onerror="this.src='ızgara tavuk.jpeg'" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Ekmek Arası Kuşbaşı Izgara Tavuk</h4>
+                    <p class="menu-item-price">Atom 150 TL / Tam Ekmek 200 TL</p>
+                    <p class="menu-item-description">Tam 200 gr / Atom 120 gr tavuk bonfile, soğan, domates, marul ve özel sos ile servis edilir.</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <span class="product-badge badge-popular">Çok Sevilenler</span>
+                    <img src="URUN ÖN PLANDA/TAVUK İNCİK.jpg" alt="Ekmek Arası Izgara Tavuk İncik" onerror="this.src='yarm incik.jpeg'" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Ekmek Arası Izgara Tavuk İncik</h4>
+                    <p class="menu-item-price">Atom 160 TL / Tam Ekmek 210 TL</p>
+                    <p class="menu-item-description">Tam 200 gr / Atom 120 gr incik, soğan, domates ve marul ile servis edilir.</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <span class="product-badge badge-new">Yeni</span>
+                    <img src="sucuk.png" alt="Sucuk Ekmek" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Sucuk Ekmek</h4>
+                    <p class="menu-item-price">Atom 150 TL / Tam Ekmek 200 TL</p>
+                    <p class="menu-item-description">Tam 200 gr / Atom 100 gr sucuk, sumaklı soğan ve domates ile hazırlanır.</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="URUN ÖN PLANDA/YARIM KÖFTE.jpg" alt="Köfte Ekmek" onerror="this.src='ızgara tavuk.jpeg'" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Köfte Ekmek</h4>
+                    <p class="menu-item-price">Atom 200 TL / Tam Ekmek 350 TL</p>
+                    <p class="menu-item-description">Tam 200 gr / Atom 120 gr köfte, sumaklı soğan ve domates ile servis edilir.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="subsection">
+              <h3 class="sub-title">Porsiyonlar</h3>
+              <div class="menu-grid">
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="tavuk incik porsion.png" alt="İncik Porsiyon" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">İncik Porsiyon</h4>
+                    <p class="menu-item-price">250 TL</p>
+                    <p class="menu-item-description">200 gr tavuk incik, yanında sumaklı soğan ve domates ile servis edilir.</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="köfte porsiyon.png" alt="Köfte Porsiyon" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Köfte Porsiyon</h4>
+                    <p class="menu-item-price">375 TL</p>
+                    <p class="menu-item-description">200 gram köfte, sumaklı soğan ve domates ile servis edilir.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- Sokak Lezzetleri -->
+          <section class="category-panel" id="cat-street">
+            <div class="subsection">
+              <h3 class="sub-title">Ekmek Arası</h3>
+              <div class="menu-grid">
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <span class="product-badge badge-popular">Çok Sevilenler</span>
+                    <img src="URUN ÖN PLANDA/TAM KUMRU.jpg" alt="Kumru" onerror="this.src='tam kumru.jpeg'" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Kumru</h4>
+                    <p class="menu-item-price">Atom 130 TL / Tam Ekmek 180 TL</p>
+                    <p class="menu-item-description"> Tam 200 gr sosis, atom 120 gr  sosis, sucuk, kaşar, ketçap, mayonez, turşu</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="URUN ÖN PLANDA/PATSO TAM.jpg" alt="Patso" onerror="this.src='patso.jpeg'" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Patso</h4>
+                    <p class="menu-item-price">Atom 100 TL / Tam Ekmek 140 TL</p>
+                    <p class="menu-item-description">Patates kızartması, ketçap, mayonez, turşu</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="URUN ÖN PLANDA/PATSO TAM.jpg" alt="Kaşarlı Patso" onerror="this.src='patso.jpeg'" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Kaşarlı Patso</h4>
+                    <p class="menu-item-price">Atom 110 TL / Tam Ekmek 150 TL</p>
+                    <p class="menu-item-description">Patates kızartması, kaşar peyniri, ketçap, mayonez, turşu</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- Tostlar -->
+          <section class="category-panel" id="cat-toast">
+            <div class="menu-grid">
+              <article class="menu-item">
+                <div class="menu-item-image">
+                  <span class="product-badge badge-new">Yeni</span>
+                  <img src="bazlamatost.png" alt="Bazlama Tost" />
+                </div>
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">Bazlama Tost</h4>
+                  <p class="menu-item-price">Atom 160 TL / Tam Ekmek 220 TL</p>
+                  <p class="menu-item-description">Bazlama ekmeği içinde sucuk, kaşar, patates</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div class="menu-item-image">
+                  <span class="product-badge badge-new">Yeni</span>
+                  <img src="icidisibir.png" alt="İçi Dışı Bir Tost" />
+                </div>
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">İçi Dışı Bir Tost</h4>
+                  <p class="menu-item-price">Atom 150 TL / Tam Ekmek 210 TL</p>
+                  <p class="menu-item-description">Dışı tost ekmeği, içi sucuk ve bol kaşar</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div class="menu-item-image">
+                  <img src="URUN ÖN PLANDA/TOST.jpg" alt="Kaşarlı Tost" onerror="this.src='bomba tost.jpeg'" />
+                </div>
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">Kaşarlı Tost</h4>
+                  <p class="menu-item-price">Atom 110 TL / Tam Ekmek 150 TL</p>
+                  <p class="menu-item-description">Özel sütlü tost ekmeği, kaşar peyniri</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div class="menu-item-image">
+                  <img src="URUN ÖN PLANDA/TOST.jpg" alt="Sucuklu Tost" onerror="this.src='bomba tost.jpeg'" />
+                </div>
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">Sucuklu Tost</h4>
+                  <p class="menu-item-price">Atom 110 TL / Tam Ekmek 150 TL</p>
+                  <p class="menu-item-description">Özel sütlü tost ekmeği, sucuk, kaşar peyniri</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div class="menu-item-image">
+                  <img src="URUN ÖN PLANDA/TOST.jpg" alt="Karışık Tost" onerror="this.src='bomba tost.jpeg'" />
+                </div>
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">Karışık Tost</h4>
+                  <p class="menu-item-price">Atom 130 TL / Tam Ekmek 170 TL</p>
+                  <p class="menu-item-description">Sucuk, kaşar peyniri, salça, kekik ve mayonez ile hazırlanır.</p>
+                </div>
+              </article>
+              <article class="menu-item">
+                <div class="menu-item-image">
+                  <img src="URUN ÖN PLANDA/BOMBA TOST.jpg" alt="Bomba Tost" onerror="this.src='bomba tost.jpeg'" />
+                </div>
+                <div class="menu-item-info">
+                  <h4 class="menu-item-name">Bomba Tost</h4>
+                  <p class="menu-item-price">Atom 150 TL / Tam Ekmek 210 TL</p>
+                  <p class="menu-item-description">Bol sucuk, bol kaşar, patates, özel sos</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Aperatifler -->
+          <section class="category-panel" id="cat-snack">
+            <div class="subsection">
+              <h3 class="sub-title">Gözlemeler</h3>
+              <div class="menu-grid">
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="URUN ÖN PLANDA/GÖZLEME.jpg" alt="Kaşarlı Gözleme" onerror="this.src='gözleme.jpeg'" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Kaşarlı Gözleme</h4>
+                    <p class="menu-item-price">150 TL</p>
+                    <p class="menu-item-description">Özel sütlü yufka + içerik ile hazırlanır.</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="URUN ÖN PLANDA/GÖZLEME.jpg" alt="Sucuklu Kaşarlı Gözleme" onerror="this.src='gözleme.jpeg'" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Sucuklu Kaşarlı Gözleme</h4>
+                    <p class="menu-item-price">150 TL</p>
+                    <p class="menu-item-description">Özel sütlü yufka + içerik ile hazırlanır.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="subsection">
+              <h3 class="sub-title">Aperatifler</h3>
+              <div class="menu-grid">
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="patateskızartması.png" alt="Patates Kızartması" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Patates Kızartması</h4>
+                    <p class="menu-item-price">90 TL</p>
+                    <p class="menu-item-description">Kızarmış patates, ketçap ve mayonez eşliğinde</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="soganhalkasi.png" alt="Soğan Halkası" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Soğan Halkası (8)</h4>
+                    <p class="menu-item-price">90 TL</p>
+                    <p class="menu-item-description">8 adet çıtır soğan halkası, sos eşliğinde</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="sigaraboregi.png" alt="Sigara Böreği" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Sigara Böreği (6)</h4>
+                    <p class="menu-item-price">90 TL</p>
+                    <p class="menu-item-description">Sütlü yufka ve beyaz peynir ile hazırlanır.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- İçecekler -->
+          <section class="category-panel" id="cat-drink">
+            <div class="subsection">
+              <h3 class="sub-title">Soğuk İçecekler</h3>
+              <div class="menu-grid">
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="coca-cola.png" alt="Coca Cola" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Kola</h4>
+                    <p class="menu-item-price">60 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="fanta.png" alt="Fanta" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Fanta</h4>
+                    <p class="menu-item-price">60 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="gazoz.png" alt="Uludağ Gazoz" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Gazoz</h4>
+                    <p class="menu-item-price">55 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="litrelik.png" alt="Litrelik Kola" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Litrelik İçecek</h4>
+                    <p class="menu-item-price">90 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="fusetea.png" alt="Fuse Tea" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Ice Tea</h4>
+                    <p class="menu-item-price">60 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="ayran.png" alt="Büyük Ayran" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Büyük Ayran</h4>
+                    <p class="menu-item-price">40 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="ayran.png" alt="Küçük Ayran" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Küçük Ayran</h4>
+                    <p class="menu-item-price">30 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="sadesoda.png" alt="Uludağ Sade Soda" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Sade Soda</h4>
+                    <p class="menu-item-price">30 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="meyvelisoda.png" alt="Meyveli Soda" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Meyveli Soda</h4>
+                    <p class="menu-item-price">35 TL</p>
+                  </div>
+                </article>
+                <article class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="su.png" alt="Sultan Su" />
+                  </div>
+                  <div class="menu-item-info">
+                    <h4 class="menu-item-name">Su</h4>
+                    <p class="menu-item-price">15 TL</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
