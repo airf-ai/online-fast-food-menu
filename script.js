@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
     "gözleme.jpeg": "GÖZLEME.jpg"
   };
 
-  // Görselleri yükle - önce "ürün ön planda" klasöründe kontrol et
+  // Görselleri yükle - önce "product-images" klasöründe kontrol et
   function loadImageWithFallback(img) {
     const originalSrc = img.getAttribute("src");
     if (!originalSrc) return;
 
-    // Eğer zaten "URUN ÖN PLANDA" klasöründen yükleniyorsa veya içecek görseliyse atla
-    if (originalSrc.includes("URUN ÖN PLANDA") || 
+    // Eğer zaten "product-images" klasöründen yükleniyorsa veya içecek görseliyse atla
+    if (originalSrc.includes("product-images") || 
         originalSrc.includes(".png") || 
         originalSrc.includes("online_fast_food_logo")) {
       return;
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Dosya adı eşleştirmesini kontrol et
     const mappedName = imageMapping[originalSrc];
     if (mappedName) {
-      const priorityPath = `URUN ÖN PLANDA/${mappedName}`;
+      const priorityPath = `product-images/${mappedName}`;
       const testImg = new Image();
       
       testImg.onload = function() {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
       
       testImg.onerror = function() {
-        // "ürün ön planda" klasöründe yoksa, orijinal görseli kullan
+        // "product-images" klasöründe yoksa, orijinal görseli kullan
         img.src = originalSrc;
       };
       
