@@ -22,7 +22,8 @@ Restoran menüsü için QR kod ile erişilebilen modern ve responsive web sitesi
 
 ## Sitenizi Güncelleme ve Yayınlama 🚀
 
-**Detaylı deployment rehberi için**: [DEPLOYMENT.md](DEPLOYMENT.md) dosyasına bakın.
+📖 **Detaylı deployment rehberi**: [DEPLOYMENT.md](DEPLOYMENT.md)  
+⚡ **Hızlı güncelleme örnekleri**: [QUICK_GUIDE.md](QUICK_GUIDE.md)
 
 ### Hızlı Başlangıç
 
