@@ -2,6 +2,16 @@
 
 Bu doküman, online fast food menü sitenizde yaptığınız güncellemeleri yayına almanız için adım adım rehberdir.
 
+---
+
+## ⚠️ SİTENİZ GÜNCELLENMİYOR MU?
+
+Değişiklikler göremiyorsanız, Pull Request'in merge edilmesi gerekiyor olabilir!
+
+**👉 [Hızlı Çözüm için buraya tıklayın](WHY_NO_UPDATES.md)**
+
+---
+
 ## Yöntem 1: Otomatik Deployment (Tavsiye Edilen) ✅
 
 GitHub Pages otomatik deployment yapılandırıldı. Artık değişikliklerinizi `main` branch'ine gönderdiğinizde siteniz otomatik olarak güncellenecek.

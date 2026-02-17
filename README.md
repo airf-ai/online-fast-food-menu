@@ -2,6 +2,18 @@
 
 Restoran menüsü için QR kod ile erişilebilen modern ve responsive web sitesi.
 
+---
+
+## ⚠️ SİTENİZ GÜNCELLENMİYOR MU?
+
+**[➡️ Buraya Tıklayın - Sorununuz 2 Dakikada Çözülecek!](WHY_NO_UPDATES.md)**
+
+Değişiklikler görünmüyorsa: Pull Request'i merge etmeniz gerekiyor!
+- 📖 [Sorun Giderme Rehberi](TROUBLESHOOTING.md)
+- ⚡ [Hızlı Çözüm](WHY_NO_UPDATES.md)
+
+---
+
 ## Özellikler
 
 - 📱 Mobil uyumlu tasarım
