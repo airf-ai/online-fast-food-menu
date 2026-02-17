@@ -12,7 +12,7 @@ Sitenizde güncelleme görünmemesinin nedeni: **Değişiklikler henüz `main` b
 - ❌ **`main` branch'e henüz merge edilmedi**
 - ❌ **GitHub Actions çalışmadı (çünkü main'de değişiklik yok)**
 
-## 🎯 ÇÖZüM: Pull Request'i Merge Edin
+## 🎯 ÇÖZÜM: Pull Request'i Merge Edin
 
 Sitenizin güncellenmesi için Pull Request'i (PR) main branch'e merge etmeniz gerekiyor.
 
@@ -99,7 +99,7 @@ git push origin main
 # 1-2 dakika bekleyin → Siteniz otomatik güncellenecek!
 ```
 
-## 🆘 HÂLÂ SORUN MU VAR?
+## 🆘 HALA SORUN MU VAR?
 
 ### Sorun 1: Merge butonu görünmüyor
 **Çözüm**: Repository'ye yazma yetkisi olduğunuzdan emin olun
