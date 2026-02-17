@@ -2,6 +2,18 @@
 
 Restoran menüsü için QR kod ile erişilebilen modern ve responsive web sitesi.
 
+---
+
+## ⚠️ SİTENİZ GÜNCELLENMİYOR MU?
+
+**[➡️ Buraya Tıklayın - Sorununuz 2 Dakikada Çözülecek!](WHY_NO_UPDATES.md)**
+
+Değişiklikler görünmüyorsa: Pull Request'i merge etmeniz gerekiyor!
+- 📖 [Sorun Giderme Rehberi](TROUBLESHOOTING.md)
+- ⚡ [Hızlı Çözüm](WHY_NO_UPDATES.md)
+
+---
+
 ## Özellikler
 
 - 📱 Mobil uyumlu tasarım
@@ -20,13 +32,24 @@ Restoran menüsü için QR kod ile erişilebilen modern ve responsive web sitesi
 - CSS3
 - JavaScript (Vanilla)
 
-## GitHub Pages ile Yayınlama
+## Sitenizi Güncelleme ve Yayınlama 🚀
 
-1. Bu repository'yi GitHub'a yükleyin
-2. Repository Settings > Pages bölümüne gidin
-3. Source olarak "main" branch'ini seçin
-4. Save butonuna tıklayın
-5. Birkaç dakika sonra siteniz `https://[kullanıcı-adınız].github.io/[repo-adı]/` adresinde yayında olacak
+📖 **Detaylı deployment rehberi**: [DEPLOYMENT.md](DEPLOYMENT.md)  
+⚡ **Hızlı güncelleme örnekleri**: [QUICK_GUIDE.md](QUICK_GUIDE.md)
+
+### Hızlı Başlangıç
+
+1. Bu repository GitHub'da zaten yapılandırılmış
+2. Repository Settings > Pages > Source: `GitHub Actions` seçin (sadece ilk seferde)
+3. Değişikliklerinizi yapın (fiyat, ürün, fotoğraf vb.)
+4. Değişiklikleri main branch'e push edin:
+   ```bash
+   git add .
+   git commit -m "Menü güncellendi"
+   git push origin main
+   ```
+5. GitHub Actions otomatik olarak sitenizi yayına alacak
+6. Site adresi: `https://airf-ai.github.io/online-fast-food-menu/`
 
 ## Kullanım
 
